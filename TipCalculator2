@@ -1,0 +1,21 @@
+bills = [125, 555, 44];
+
+function calcTip(billvalue) {
+    if (billvalue >= 50 && billvalue <= 300) {
+        tip = billvalue * .15;
+        return tip;
+    } else {
+        tip = billvalue * .20;
+        return tip;
+    }
+}
+console.log(calcTip(1000));//test function
+console.log(calcTip(100));//test function
+
+console.log(bills);
+
+tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[bills.length - 1])];
+console.log(tips);
+
+totals = [(calcTip(bills[0]) + bills[0]), (calcTip(bills[1]) + bills[1]), (calcTip(bills[bills.length - 1]) + bills[bills.length - 1])];
+console.log(totals);
