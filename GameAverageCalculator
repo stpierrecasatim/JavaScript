@@ -1,0 +1,15 @@
+
+const game1Koala = 100;
+const game2Koala = 100;
+const game3Koala = 100;
+const aveKoalas = ((game1Koala + game2Koala + game3Koala) / 3);
+
+if ((aveDolphins > aveKoalas) && aveDolphins >= 100) {
+    console.log(`Dolphins win with ${aveDolphins} pts total average`);
+} else if ((aveDolphins < aveKoalas) && aveKoalas >= 100) {
+    console.log(`Koalas win with ${aveKoalas} pts total average`);
+} else if ((aveDolphins === aveKoalas) && ((aveDolphins && aveKoalas) >= 100)) {
+    console.log("It's a draw!");
+} else {
+    console.log("No one wins");
+}
